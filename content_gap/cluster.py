@@ -75,8 +75,10 @@ def _name_clusters(clusters: list[Cluster]) -> None:
             c.name = c.seed
             used.add(c.name)
             continue
-        freq = Counter(t for kw in c.keywords for t in keyword_tokens(kw))
-        ordered = [t for t, _ in freq.most_common()]
+        freq = Counter(t for kw in c.keywords for t in sorted(keyword_tokens(kw)))
+        seed_words = c.seed.split()
+        # deterministic: frequency, then position in the seed keyword, then alphabetical
+        ordered = sorted(freq, key=lambda t: (-freq[t], seed_words.index(t) if t in seed_words else 99, t))
         name = ""
         for k in range(min(2, len(ordered)), len(ordered) + 1):
             name = _in_seed_order(ordered[:k], c.seed.split())

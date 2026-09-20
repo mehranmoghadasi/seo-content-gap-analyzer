@@ -21,7 +21,7 @@ def write_csv(rows: list[dict], path: Path) -> None:
         if not rows:
             fh.write("")
             return
-        w = csv.DictWriter(fh, fieldnames=list(rows[0].keys()))
+        w = csv.DictWriter(fh, fieldnames=list(rows[0].keys()), lineterminator="\n")
         w.writeheader()
         w.writerows(rows)
 

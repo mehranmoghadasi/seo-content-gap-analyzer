@@ -20,9 +20,9 @@ local seo,local business seo,3,MEDIUM
 seo audit,technical seo audit,3,MEDIUM
 seo audit,seo audit service,3,MEDIUM
 seo audit,website seo audit,3,MEDIUM
-wordpress development,wordpress theme development,3,MEDIUM
-wordpress development,custom wordpress theme,3,MEDIUM
-wordpress development,wordpress plugin development,3,MEDIUM
+wordpress theme,wordpress theme development,3,MEDIUM
+wordpress theme,custom wordpress theme,3,MEDIUM
+wordpress theme,wordpress plugin development,3,MEDIUM
 conversion optimization,conversion rate optimization,2,LOW
 conversion optimization,website conversion optimization,2,LOW
 digital marketing,digital marketing agency,2,LOW
@@ -31,9 +31,9 @@ lead generation,lead generation,2,LOW
 lead generation,lead generation website,2,LOW
 wordpress design,wordpress website design,2,LOW
 wordpress design,wordpress web design,2,LOW
-campaign management,email campaign management,1,LOW
+email campaign,email campaign management,1,LOW
 facebook ads,facebook ads,1,LOW
-landing design,landing page design,1,LOW
-media marketing,social media marketing,1,LOW
+landing page,landing page design,1,LOW
 ppc management,ppc management,1,LOW
-wordpress optimization,wordpress speed optimization,1,LOW
+social media,social media marketing,1,LOW
+wordpress speed,wordpress speed optimization,1,LOW
