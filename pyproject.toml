@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seo-content-gap-analyzer"
+version = "2.0.0"
+description = "Find the phrases competitors cover that your page does not, and cluster keyword lists into topics. Transparent scoring, no ML stack."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [{name = "Mehran Moghadasi"}]
+dependencies = ["requests>=2.31", "beautifulsoup4>=4.12", "lxml>=5.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[project.scripts]
+content-gap = "content_gap.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["content_gap*"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "BLE"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
