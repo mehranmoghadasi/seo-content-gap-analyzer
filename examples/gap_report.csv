@@ -1,0 +1,11 @@
+phrase,ngram,gap_type,gap_score,competitor_count,competitors,competitor_per_1k,target_per_1k,found_on
+lead scoring,2,missing,19.61,3,3,19.61,0.0,"alpha.example, beta.example, gamma.example"
+marketing automation,2,missing,19.61,3,3,19.61,0.0,"alpha.example, beta.example, gamma.example"
+mobile app,2,missing,15.04,3,3,15.04,0.0,"alpha.example, beta.example, gamma.example"
+workflow automation,2,missing,15.04,3,3,15.04,0.0,"alpha.example, beta.example, gamma.example"
+customer data platform,3,missing,14.08,2,3,21.12,0.0,"alpha.example, beta.example"
+buyers,1,missing,10.09,2,3,15.14,0.0,"alpha.example, gamma.example"
+email sequences,2,missing,10.09,2,3,15.14,0.0,"alpha.example, gamma.example"
+hours,1,missing,10.09,2,3,15.14,0.0,"alpha.example, gamma.example"
+sales pipeline management,3,missing,9.52,2,3,14.28,0.0,"alpha.example, beta.example"
+sales pipeline,2,underweighted,7.89,3,3,25.13,17.24,"alpha.example, beta.example, gamma.example"
