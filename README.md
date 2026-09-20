@@ -4,7 +4,7 @@
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/)
-[![Tests](https://img.shields.io/badge/tests-12%20passing-brightgreen?logo=pytest&logoColor=white)](tests/)
+[![CI](https://github.com/mehranmoghadasi/seo-content-gap-analyzer/actions/workflows/python-app.yml/badge.svg)](https://github.com/mehranmoghadasi/seo-content-gap-analyzer/actions/workflows/python-app.yml)
 [![Last Commit](https://img.shields.io/github/last-commit/mehranmoghadasi/seo-content-gap-analyzer)](https://github.com/mehranmoghadasi/seo-content-gap-analyzer/commits/main)
 
 ## The problem
@@ -129,7 +129,7 @@ seo-content-gap-analyzer/
 │   └── cluster.py         # keyword clustering + unique naming
 ├── tests/                 # 12 tests, in-memory pages, no network
 ├── examples/              # demo.py, keywords.txt, gap_report.csv, keyword_clusters.csv
-├── ci/python-app.yml      # GitHub Actions workflow (copy to .github/workflows/)
+├── ci/python-app.yml      # GitHub Actions workflow (also installed at .github/workflows/)
 ├── requirements.txt
 └── pyproject.toml
 ```
